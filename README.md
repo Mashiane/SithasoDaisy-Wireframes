@@ -8,7 +8,7 @@ Picture this: You have a brilliant idea for a mobile web app that could revoluti
   
 With SithasoDaisy Wireframes, you can wave goodbye to hours of tedious designs and say hello to a world of intuitive design. This powerful web application harnesses the full power of TailwindCSS, the beloved utility-first CSS framework, to provide you with a seamless wireframing experience like never before.
 
-Let's start creating wireframes like this one!
+Let's start creating wireframes like this one! Just download and unzip this self encompasing file and double click the 'run_server_1000.bat' file to start the tool.
 
 ![enter image description here](https://github.com/Mashiane/SithasoDaisy-Wireframes/blob/8cfffc304a7b9449d02a1ee21de2dd8ac20c9dcf/BETAS/SDWireframes%20Project%2001.png)
 
@@ -33,4 +33,4 @@ So, what are you waiting for? Embrace the power of SithasoDaisy and revolutioniz
 
 You can watch an Introductory Video Here.
 
-[DaisyUI Magic: Elevate Your TailwindCSS Mobile Design with SithasoDaisy Wireframes](https://youtu.be/r0skgZkx_`enter code here`AQ)
+[DaisyUI Magic: Elevate Your TailwindCSS Mobile Design with SithasoDaisy Wireframes](https://youtu.be/r0skgZkx_AQ)
