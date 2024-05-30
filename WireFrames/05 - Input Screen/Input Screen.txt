@@ -1,0 +1,11 @@
+
+********** 1 **********
+
+Right click 'Add View' > 'Custom View' > 'SDUIApp'.
+Change the Name property of this component to 'app1'
+Change the following properties for the 'SDUIApp.app1' component.
+Name -> app1
+Project Name -> app1
+Project Title -> app1
+Theme -> 
+

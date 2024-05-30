@@ -1,0 +1,347 @@
+
+********** 1 **********
+
+Right click 'Add View' > 'Custom View' > 'SDUIApp'.
+Change the Name property of this component to 'reactapp1'
+Change the following properties for the 'SDUIApp.reactapp1' component.
+Name -> reactapp1
+Project Name -> app1
+Project Title -> app1
+Theme -> 
+
+
+********** 2 **********
+
+Right click 'Add View' > 'Custom View' > 'SDUIPage'.
+Change the Name property of this component to 'page1'
+Change the following properties for the 'SDUIPage.page1' component.
+Name -> page1
+ParentID -> reactapp1
+Title -> page
+FullPage -> true
+Container -> false
+Mx Auto -> false
+Flex -> false
+Flex Wrap -> false
+Bg Color -> base
+Bg Color Intensity -> 100
+Styles -> flex:1;padding-bottom:12px;padding-left:16px;padding-right:16px;padding-top:12px
+
+
+Open 'pgIndex' code module, find the 'CreateDrawerMenu' sub-routine.
+Add the following code line 'drawer.AddItemChildPage("???", page1)'.
+'Add the following code line 'drawer.AddItemPage(page1)'.
+
+********** 3 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'page1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component1' component.
+Name -> component1
+ParentID -> page1
+Styles (JSON) -> align-items:center;display:flex;flex-direction:row;justify-content:space-between
+
+
+********** 4 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'component1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component2' component.
+Name -> component2
+ParentID -> component1
+Tag -> p
+Text -> Home
+Styles (JSON) -> color:#083371;font-size:32px;font-weight:800
+
+
+********** 5 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIButton'.
+Drag & Drop this newly added component and place it inside the 'component1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIButton.button1' component.
+Name -> button1
+ParentID -> component1
+Caption -> 
+Button Type -> button-icon
+Shape -> circle
+Color -> ghost
+Text Color -> #083371
+Icon (Left) -> fa-solid fa-gear
+
+
+********** 6 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'page1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component3' component.
+Name -> component3
+ParentID -> page1
+Styles (JSON) -> align-items:center;background-color:#f1f3f7;border-radius:8px;display:flex;flex-direction:row;margin-top:16px;padding:8px
+
+
+********** 7 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIIcon'.
+Drag & Drop this newly added component and place it inside the 'component3' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIIcon.icon1' component.
+Name -> icon1
+TargetID -> component3
+Icon Name -> fa-solid fa-magnifying-glass
+Size -> 
+Own Size -> 24px
+Flip -> 
+
+
+********** 8 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUITextBox'.
+Drag & Drop this newly added component and place it inside the 'component3' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUITextBox.textbox1' component.
+Name -> textbox1
+ParentID -> component3
+Caption -> textbox1
+Place Holder -> Search
+Text Alignment -> left
+Bordered -> false
+DP Alt Input -> false
+Styles -> color:#083371;font-size:16px;font-weight:400;height:2rem;margin-left:8px
+
+
+********** 9 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'page1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.animatedview' component.
+Name -> animatedview
+ParentID -> page1
+
+
+********** 10 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'animatedview' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component4' component.
+Name -> component4
+ParentID -> animatedview
+Tag -> p
+Text -> Accounts
+Styles (JSON) -> color:#083371;font-size:24px;font-weight:500;margin-top:16px
+
+
+********** 11 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'animatedview' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.accountitem' component.
+Name -> accountitem
+ParentID -> animatedview
+Styles (JSON) -> background-color:#ffffff;border-radius:8px;display:flex;flex-direction:row;margin-top:8px;padding:8px
+
+
+********** 12 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'accountitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component5' component.
+Name -> component5
+ParentID -> accountitem
+Styles (JSON) -> background-color:#e74c3c;border-radius:24px;height:48px;width:48px
+
+
+********** 13 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'accountitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component6' component.
+Name -> component6
+ParentID -> accountitem
+Styles (JSON) -> display:flex;flex-direction:column;flex:1;justify-content:center;margin-left:16px
+
+
+********** 14 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'component6' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.itemamount' component.
+Name -> itemamount
+ParentID -> component6
+Tag -> p
+Text -> $15,178.47
+Styles (JSON) -> color:#083371;font-size:16px;font-weight:500
+
+
+********** 15 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'component6' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.itemdescription' component.
+Name -> itemdescription
+ParentID -> component6
+Tag -> p
+Text -> Salary Account **** 1485
+Styles (JSON) -> color:#818892;font-size:16px;font-weight:400
+
+
+********** 16 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'accountitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component7' component.
+Name -> component7
+ParentID -> accountitem
+Styles (JSON) -> background-color:#f1f3f7;border-radius:8px;padding-left:8px;padding-right:8px;padding-top:4px;padding-bottom:4px;align-self:center
+
+
+********** 17 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'component7' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component8' component.
+Name -> component8
+ParentID -> component7
+Tag -> p
+Text -> View
+Styles (JSON) -> color:#083371;font-size:16px;font-weight:600
+
+
+********** 18 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'page1' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.transview' component.
+Name -> transview
+ParentID -> page1
+
+
+********** 19 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'transview' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.transheading' component.
+Name -> transheading
+ParentID -> transview
+Styles (JSON) -> align-items:center;flex-direction:row;justify-content:space-between;margin-bottom:8px;display:flex;margin-top:16px
+
+
+********** 20 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'transheading' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.tranheading' component.
+Name -> tranheading
+ParentID -> transheading
+Tag -> p
+Text -> Transactions
+Styles (JSON) -> font-size:24px;font-weight:500;color:#083371
+
+
+********** 21 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'transheading' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lblseeall' component.
+Name -> lblseeall
+ParentID -> transheading
+Tag -> p
+Text -> See All
+Styles (JSON) -> color:#083371;font-size:16px;font-weight:600
+
+
+********** 22 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'transview' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.tranlist' component.
+Name -> tranlist
+ParentID -> transview
+
+
+********** 23 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'tranlist' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.tranitem' component.
+Name -> tranitem
+ParentID -> tranlist
+Bg Color -> base
+Bg Color Intensity -> 200
+Styles (JSON) -> border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-bottom-width:1px;border-color:#9a9ea4;border-top-left-radius:8px;border-top-right-radius:8px;color:#083371;display:flex;flex-direction:row;font-size:24px;font-weight:500;padding-bottom:16px;padding-left:8px;padding-right:8px;padding-top:16px
+
+
+********** 24 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'tranitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.component9' component.
+Name -> component9
+ParentID -> tranitem
+Styles (JSON) -> align-items:center;background-color:#e74c3c33;border-radius:24px;display:flex;height:48px;justify-content:center;width:48px
+
+
+********** 25 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIIcon'.
+Drag & Drop this newly added component and place it inside the 'component9' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIIcon.icon2' component.
+Name -> icon2
+TargetID -> component9
+Icon Name -> fa-solid fa-wallet
+Color -> #e74c3c
+Size -> 
+Flip -> 
+
+
+********** 26 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'tranitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lbltitletext' component.
+Name -> lbltitletext
+ParentID -> tranitem
+Styles (JSON) -> display:flex;flex-direction:column;flex:1;justify-content:center;margin-left:16px
+
+
+********** 27 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'lbltitletext' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lbltrantitle' component.
+Name -> lbltrantitle
+ParentID -> lbltitletext
+Tag -> p
+Text -> Salary Payment
+Styles (JSON) -> color:#083371;font-size:16px;font-weight:500
+
+
+********** 28 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'lbltitletext' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lbltrandate' component.
+Name -> lbltrandate
+ParentID -> lbltitletext
+Tag -> p
+Text -> 25 May 2023, 6:15 PM
+Styles (JSON) -> color:#818892;font-size:16px;font-weight:400
+
+
+********** 29 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'tranitem' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lbltranamount' component.
+Name -> lbltranamount
+ParentID -> tranitem
+Styles (JSON) -> align-self:center;background-color:#e74c3c33;border-radius:8px;display:flex;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px
+
+
+********** 30 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIComponent'.
+Drag & Drop this newly added component and place it inside the 'lbltranamount' component. Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIComponent.lblamount' component.
+Name -> lblamount
+ParentID -> lbltranamount
+Text -> $2000.00
+Styles (JSON) -> color:#e74c3c;font-size:16px;font-weight:600
+
