@@ -1,0 +1,138 @@
+
+********** 1 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIApp'.
+Change the Name property of this component to 'app1'
+Change the following properties for the 'SDUIApp.app1' component.
+Name -> app1
+Project Name -> app1
+Project Title -> app1
+Theme -> 
+
+
+********** 2 **********
+
+Click Project > Add New Module > Code Module. Type in 'pgpage1' as a module name and click Ok.
+Create a blank layout and add a SDUIPage custom component in it..
+Resize the new SDUIPage component to fit the whole working area.
+Set the 'Name' of this SDUIPage component to be 'page'
+Set the 'Page Name' of this SDUIPage component to be 'page1'
+Click File > Save As, enter the layout name as 'page1layout' and click Ok
+Change the following properties for the 'SDUIPage.page1' component.
+Name -> page1
+Clear Parent -> false
+Title -> page
+BackgroundImage -> ./assets/7.jpg
+FullPage -> true
+Container -> false
+Mx Auto -> false
+Flex -> false
+Flex Wrap -> false
+Paddings -> a=5px; x=?; y=?; t=?; b=?; l=?; r=?
+
+
+Open 'pgIndex' code module, find the 'CreateDrawerMenu' sub-routine.
+Add the following code line 'drawer.AddItemChildPage("???", page1)'.
+'Add the following code line 'drawer.AddItemPage(page1)'.
+
+********** 3 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIForm'.
+Change the Name property of this component to 'form1'
+Drag & Drop this newly added component and place it inside the 'page1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIForm.form1' component.
+Name -> form1
+ParentID -> page1
+Paddings -> a=10px; x=?; y=?; t=?; b=?; l=?; r=?
+
+
+********** 4 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIDiv'.
+Change the Name property of this component to 'div1'
+Drag & Drop this newly added component and place it inside the 'form1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIDiv.div1' component.
+Name -> div1
+ParentID -> form1
+Custom Tag -> 
+Center Children -> true
+Height -> 100px
+
+
+********** 5 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIAvatar'.
+Change the Name property of this component to 'avatar1'
+Drag & Drop this newly added component and place it inside the 'div1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIAvatar.avatar1' component.
+Name -> avatar1
+ParentID -> div1
+Size -> 20
+Classes -> shadow-lg
+
+
+********** 6 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUITextBox'.
+Change the Name property of this component to 'textbox1'
+Drag & Drop this newly added component and place it inside the 'form1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUITextBox.textbox1' component.
+Name -> textbox1
+ParentID -> form1
+Input Type -> input-group
+Caption -> First Name
+Caption Color -> #FFFFFF
+Classes -> rounded
+
+
+********** 7 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUITextBox'.
+Change the Name property of this component to 'textbox2'
+Drag & Drop this newly added component and place it inside the 'form1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUITextBox.textbox2' component.
+Name -> textbox2
+ParentID -> form1
+Input Type -> input-group
+Caption -> Last Name
+Caption Color -> #FFFFFF
+
+
+********** 8 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUITextBox'.
+Change the Name property of this component to 'textbox3'
+Drag & Drop this newly added component and place it inside the 'form1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUITextBox.textbox3' component.
+Name -> textbox3
+ParentID -> form1
+Input Type -> password
+Caption -> Password
+Caption Color -> #FFFFFF
+Show Eyes -> true
+Append Icon -> fa-solid fa-eye
+
+
+********** 9 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIButton'.
+Change the Name property of this component to 'button1'
+Drag & Drop this newly added component and place it inside the 'form1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIButton.button1' component.
+Name -> button1
+ParentID -> form1
+Caption -> Sign Up
+Bg Color -> #FFFFFF
+Text Color -> #000000
+Icon (Left) -> 
+Normal Case -> true
+Block -> true
+Margins -> a=?; x=?; y=?; t=20px; b=?; l=?; r=?
+

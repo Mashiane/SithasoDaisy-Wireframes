@@ -1,0 +1,220 @@
+
+********** 1 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIApp'.
+Change the Name property of this component to 'petadopt'
+Change the following properties for the 'SDUIApp.petadopt' component.
+Name -> petadopt
+Project Name -> app1
+Project Title -> app1
+Theme -> 
+
+
+********** 2 **********
+
+Click Project > Add New Module > Code Module. Type in 'pgkanban' as a module name and click Ok.
+Create a blank layout and add a SDUIPage custom component in it..
+Resize the new SDUIPage component to fit the whole working area.
+Set the 'Name' of this SDUIPage component to be 'page'
+Set the 'Page Name' of this SDUIPage component to be 'kanban'
+Click File > Save As, enter the layout name as 'kanbanlayout' and click Ok
+Change the following properties for the 'SDUIPage.kanban' component.
+Name -> kanban
+Clear Parent -> false
+Page Name* -> kanban
+Title -> Kanban Board
+FullPage -> true
+Container -> false
+Mx Auto -> false
+Flex -> false
+Flex Wrap -> false
+Paddings -> a=5px; x=?; y=?; t=?; b=?; l=?; r=?
+
+
+Open 'pgIndex' code module, find the 'CreateDrawerMenu' sub-routine.
+Add the following code line 'drawer.AddItemChildPage("???", kanban)'.
+'Add the following code line 'drawer.AddItemPage(kanban)'.
+
+********** 3 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIRow'.
+Change the Name property of this component to 'row1'
+Drag & Drop this newly added component and place it inside the 'kanban' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIRow.row1' component.
+Name -> row1
+ParentID -> kanban
+Gap -> 4
+Grid -> true
+Grid Cols -> 12
+Classes -> my-4
+
+
+********** 4 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUICol'.
+Change the Name property of this component to 'col2'
+Drag & Drop this newly added component and place it inside the 'row1' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUICol.col2' component.
+Name -> col2
+ParentID -> row1
+Col Span Size -> 12
+
+
+********** 5 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIBasicCard'.
+Change the Name property of this component to 'taskcard'
+Drag & Drop this newly added component and place it inside the 'col2' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIBasicCard.taskcard' component.
+Name -> taskcard
+ParentID -> col2
+Bordered -> true
+Width -> 
+Shadow -> 
+Border Style -> 
+Classes (;) -> border-t-[#00FF00] border-t-[6px]
+
+
+********** 6 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUICardBody'.
+Change the Name property of this component to 'taskcardbody'
+Drag & Drop this newly added component and place it inside the 'taskcard' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUICardBody.taskcardbody' component.
+Name -> taskcardbody
+ParentID -> taskcard
+Classes (;) -> shadow-none
+Styles ( -> padding-bottom:10px;padding-left:3px;padding-right:3px;padding-top:3px
+
+
+********** 7 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIToolBar'.
+Change the Name property of this component to 'toolbar1'
+Drag & Drop this newly added component and place it inside the 'taskcardbody' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIToolBar.toolbar1' component.
+Name -> toolbar1
+ParentID -> taskcardbody
+Has Center -> false
+Title -> 
+Title Size -> 1.5xl
+Has Hamburger -> false
+Hamburger On Small Only -> false
+Logo Shape -> squircle
+Has Menu Button -> false
+Shadow -> false
+
+
+********** 8 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIBadge'.
+Change the Name property of this component to 'taskpriority'
+Drag & Drop this newly added component and place it inside the 'toolbar1start' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIBadge.taskpriority' component.
+Name -> taskpriority
+ParentID -> toolbar1start
+Variant -> success
+Caption -> High
+
+
+********** 9 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIBadge'.
+Change the Name property of this component to 'tasktype'
+Drag & Drop this newly added component and place it inside the 'toolbar1start' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIBadge.tasktype' component.
+Name -> tasktype
+ParentID -> toolbar1start
+Variant -> success
+Caption -> Feature
+Margins -> a=?; x=3px; y=?; t=?; b=?; l=?; r=?
+
+
+********** 10 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIDropDown'.
+Change the Name property of this component to 'taskmenu'
+Drag & Drop this newly added component and place it inside the 'toolbar1end' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIDropDown.taskmenu' component.
+Name -> taskmenu
+ParentID -> toolbar1end
+Activator -> icon
+Icon Name -> fa-solid fa-ellipsis-vertical
+Button/Avatar/Icon Size -> 2lg
+Avatar Url -> 
+Key Values -> 
+Position -> end
+Menu Normal -> true
+Rounded Box -> true
+
+
+********** 11 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUILabel'.
+Change the Name property of this component to 'taskname'
+Drag & Drop this newly added component and place it inside the 'taskcardbody' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUILabel.taskname' component.
+Name -> taskname
+ParentID -> taskcardbody
+Caption -> This is my task name kjshjdhaskj kjhafjhk khdfjhks kjshfkjhkjs kjhsjkhfkjhska kjshkfhkhaskf kjhjshfkjhka 
+Margins -> a=?; x=10px; y=?; t=?; b=?; l=?; r=?
+Classes -> text-wrap
+
+
+********** 12 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUILabel'.
+Change the Name property of this component to 'taskduedate'
+Drag & Drop this newly added component and place it inside the 'taskcardbody' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUILabel.taskduedate' component.
+Name -> taskduedate
+ParentID -> taskcardbody
+Caption -> Due Date:
+Margins -> a=?; x=10px; y=?; t=2px; b=1px; l=?; r=?
+Classes -> text-wrap
+
+
+********** 13 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIProgress'.
+Change the Name property of this component to 'taskprogress'
+Drag & Drop this newly added component and place it inside the 'taskcardbody' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIProgress.taskprogress' component.
+Name -> taskprogress
+ParentID -> taskcardbody
+Type -> input-group
+Width -> 
+Caption -> Progress
+Append Icon Removed -> true
+Hint Text Removed -> true
+Indicator Removed -> true
+Prefix Removed -> true
+Prepend Button Removed -> true
+Suffix Removed -> true
+Margins -> a=?; x=10px; y=?; t=5px; b=?; l=?; r=?
+
+
+********** 14 **********
+
+Right click 'Add View', then 'Custom View', then click 'SDUIBadge'.
+Change the Name property of this component to 'taskresponsible'
+Drag & Drop this newly added component and place it inside the 'taskcardbody' component.
+Ensure it's placed INSIDE the edges of the parent component and resize it according to your needs.
+Change the following properties for the 'SDUIBadge.taskresponsible' component.
+Name -> taskresponsible
+ParentID -> taskcardbody
+Badge Type -> image-left
+Caption -> Anele Mbanga
+Margins -> a=?; x=10px; y=?; t=5px; b=?; l=?; r=?
+
